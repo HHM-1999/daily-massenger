@@ -1,0 +1,77 @@
+body {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  background: #fff;
+  color: #222;
+  font-weight: 400;
+  overflow-x: hidden;
+  letter-spacing: -0.3px;
+}
+.container {
+  max-width: 1300px !important;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.img100 {
+  width: 100%;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 0;
+  line-height: 22px;
+}
+/* header start */
+/*  top Area */
+.top-area {
+  padding: 15px 0;
+}
+.date-time p {
+  font-size: 14px;
+}
+.date-time i {
+  padding-right: 3px;
+  font-size: 12px;
+}
+.date-time p span {
+  font-weight: 500;
+}
+/* Top-logo */
+.top-logo img {
+  width: 360px;
+}
+/* Top-Social-link */
+.social-link ul {
+  padding: 0;
+  margin: 0;
+}
+.social-link ul li {
+  list-style: none;
+  display: inline;
+}
+.social-link ul li a {
+  margin-right: 2px;
+}
+.social-link ul li a i {
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50px;
+  background: #333;
+  color: #fff;
+}
+.bangla-button {
+  background: #006c6e;
+  color: #fff;
+  font-size: 14px;
+  font-family: "SolaimanLipi", serif;
+  font-weight: bold;
+  padding: 3px 10px 1px;
+  margin-right: 5px !important;
+  border-radius: 3px;
+  text-decoration: none;
+}
