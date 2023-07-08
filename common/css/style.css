@@ -7,8 +7,13 @@ body {
   overflow-x: hidden;
   letter-spacing: -0.3px;
 }
+picture {
+  aspect-ratio: 1.7777;
+  object-fit: cover;
+  object-position: center;
+}
 .container {
-  max-width: 1300px !important;
+  max-width: 1270px !important;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -24,10 +29,13 @@ a {
   text-decoration: none;
 }
 .BorderTop {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ebebeb;
 }
 .BorderBottom {
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px solid #ebebeb;
+}
+.BorderRight {
+  border-right: 1px solid #ebebeb;
 }
 ul {
   list-style: none;
@@ -39,7 +47,6 @@ li {
   white-space: nowrap;
   overflow: hidden;
   animation: marquee 10s linear infinite;
- 
 }
 @keyframes marquee {
   0% {
@@ -130,6 +137,136 @@ li {
   top: 0;
   z-index: 9;
 }
+/* main section */
+
+/*  lead news */
+.desc {
+  padding: 5px 0 0;
+}
+.desc .title {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.desc .title:hover {
+  color: #006c6e;
+}
+.desc .brief-line p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #555;
+  font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  margin-top: 0;
+}
+.opinion-img img {
+  border-radius: 50%;
+  padding: 0 22px;
+}
+/* lead news image */
+.imgSize {
+  position: relative;
+}
+/* Inner Top 1 section */
+.innertop {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ebebeb;
+}
+.toplistimg {
+  height: 115px;
+}
+.dhakaAirSize {
+  border: 0 none;
+  box-shadow: none;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+.imgView {
+  width: 260px;
+}
+.dhakaAir-main-image img {
+  height: 485px;
+}
+
+.dhakaAir-main-image .desc .title {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  font-weight: 600;
+}
+/* E-paper */
+.E-paper {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+.E-paperBanner {
+  background: #006c6e;
+  text-align: center;
+  padding: 7px;
+}
+.E-paper h5 {
+  color: #fff;
+  font-size: 18px;
+}
+.MagazineArea .magezineImg {
+  height: 355px;
+  overflow: hidden;
+}
+.magezineImg img {
+  padding-bottom: 10px;
+}
+.E-paperAds {
+  padding-top: 20px;
+}
+.E-paperAds img {
+  height: 230px;
+}
+/* Opinion section */
+.opinion-section {
+  border-top: 1px solid #b9b9b9;
+  border-bottom: 4px double #b9b9b9;
+}
+.opinion-section h3 {
+  color: #006c6e;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+  text-transform: uppercase;
+}
+.opinion-section i {
+  color: #006c6e;
+  position: relative;
+  top: 3px;
+  padding-left: 5px;
+}
+.opinion-topSection .BordBottom {
+  border-bottom: 1px solid #ebebeb;
+  margin-left: 2px;
+}
+.desc i {
+  font-size: 12px;
+  padding-right: 5px;
+  color: #006c6e;
+}
+.imgRadius img {
+  border-radius: 50%;
+}
+.Ads {
+  padding: 20px 0 0;
+  margin-top: 20px;
+  border-top: 1px solid #ebebeb;
+}
+.Ads a{
+  text-decoration: none;
+}
 
 /* Footer */
 .Footer-top {
@@ -157,6 +294,9 @@ li {
 }
 .list1 {
   padding-left: 2px;
+}
+.list4 {
+  margin-left: -66px;
 }
 .contact-address p {
   white-space: nowrap;
