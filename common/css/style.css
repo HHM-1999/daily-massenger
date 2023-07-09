@@ -13,7 +13,7 @@ picture {
   object-position: center;
 }
 .container {
-  max-width: 1270px !important;
+  max-width: 1300px !important;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -29,10 +29,10 @@ a {
   text-decoration: none;
 }
 .BorderTop {
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid #ccc;
 }
 .BorderBottom {
-  border-bottom: 4px solid #ebebeb;
+  border-bottom: 4px solid #ccc;
 }
 .BorderRight {
   border-right: 1px solid #ebebeb;
@@ -48,6 +48,10 @@ li {
   overflow: hidden;
   animation: marquee 10s linear infinite;
 }
+.sticky-element {
+  position: sticky;
+  top: 0;
+}
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -57,7 +61,11 @@ li {
   }
 }
 /* header start */
+
 /*  top Area */
+.header-part {
+  margin-left: 16px;
+}
 .top-area {
   padding: 15px 0;
 }
@@ -131,12 +139,9 @@ li {
 .dropdown-menu.show .drop-menu {
   background-color: #333;
   color: #fff;
+  display: block;
 }
-.sticky-element {
-  position: sticky;
-  top: 0;
-  z-index: 9;
-}
+
 /* main section */
 
 /*  lead news */
@@ -264,8 +269,104 @@ li {
   margin-top: 20px;
   border-top: 1px solid #ebebeb;
 }
-.Ads a{
-  text-decoration: none;
+/* বাংলা  */
+.bangla-heading {
+  background: #006c6e;
+  text-align: center;
+  padding: 12px 10px 7px;
+}
+.bangla-heading h3 {
+  color: #ebebeb;
+}
+.lead-news {
+  padding: 15px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.lead-newslist h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* সর্বশেষ */
+.sorbosesh-heading {
+  background: #006c6e;
+  text-align: center;
+  padding: 3px 10px 7px;
+}
+.sorbosesh-heading h3 {
+  color: #ebebeb;
+  font-size: 17px;
+}
+.sorbosesh-heading i {
+  color: #ebebeb;
+  font-size: 17px;
+}
+.sorbosesh-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow: auto;
+  border-left: 1px solid #e2e2e2;
+}
+.sorbosesh-list li {
+  border-bottom: 1px solid #e2e2e2;
+}
+.sorbosesh-list li p {
+  font-size: 15px;
+}
+.sorbosesh-heading h3 {
+  font-size: 16px;
+}
+/* Ads image */
+.ads-news-section {
+  background-color: #eff5f4;
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.image-height {
+  height: 253px;
+}
+/* TREADING NEWS */
+.treading-title h2 {
+  font-size: 20px;
+  color: #222;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  line-height: 29px;
+  padding-left: 2px;
+  text-transform: uppercase;
+}
+.treading-title .treading-Border::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 4px solid #006c6e;
+  top: 10px;
+  display: inline-block;
+  margin-left: 20px;
+  transform: skewX(-66deg);
+}
+.treading-title .treading-Border::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 4px solid #006c6e;
+  top: 18px;
+  display: inline-block;
+  margin-left: 20px;
+  transform: skewX(-71deg);
+}
+.treading-count span {
+  font-size: 50px;
+  line-height: 50px;
+  color: #006c6e;
+  font-weight: bold;
+}
+.treading-bottom {
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 4px;
 }
 
 /* Footer */
@@ -347,4 +448,65 @@ span {
   background: #fff;
   margin-right: 3px;
   border-radius: 50%;
+}
+/* Footer ads */
+.footer-ads {
+  position: fixed;
+  bottom: 30px;
+  height: 67px;
+  left: 0;
+  right: 0;
+  background: #f0f0f054;
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999;
+}
+.foot-ads-section {
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+}
+.foot-ads-section i {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background-color: red;
+  width: 35px;
+  height: 35px;
+  opacity: 0.6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.foot-ads-section i:hover {
+  color: #000;
+  background-color: red;
+  opacity: 1;
+}
+
+/* back to top */
+.gotoTop {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 999;
+  background: #006c6e;
+  display: block;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 3px;
 }
