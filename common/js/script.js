@@ -12,9 +12,9 @@ exitButton.addEventListener('click',function(){
 
 onscroll = () => {
     if(document.documentElement.scrollTop > 500){
-      setTimeout(function(){ document.getElementById('gototop').classList.remove('d-none') }, 500);
+      setTimeout(function(){ document.getElementById('gototop').classList.remove('d-none') }, 300);
     }else{
-      setTimeout(function(){ document.getElementById('gototop').classList.add('d-none') }, 500);
+      setTimeout(function(){ document.getElementById('gototop').classList.add('d-none') }, 300);
     }
   };
   
