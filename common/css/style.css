@@ -46,7 +46,9 @@ li {
 .marquee {
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 10s linear infinite;
+  animation: marquee 30s linear infinite;
+  position: absolute;
+  z-index: -1;
 }
 .sticky-element {
   position: sticky;
@@ -417,14 +419,15 @@ li {
 /* Marquee slider */
 .scrollheading {
   background: #006c6e;
-  width: 150px;
-  height: 45px;
+  width: 140px;
+  height: 33px;
 }
 .scroll-section {
   z-index: 9999;
   position: fixed;
   left: 0;
   bottom: 0;
+  right: 0;
   width: 100%;
   background: #2a2a2a;
   color: #fff;

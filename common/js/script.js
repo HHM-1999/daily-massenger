@@ -1,3 +1,7 @@
+///exit button///
+
+
+
 const exitButton= document.querySelector('.exit-button');
 
 exitButton.addEventListener('click',function(){
@@ -8,7 +12,7 @@ exitButton.addEventListener('click',function(){
 });
 
 
-
+///goto button///
 
 onscroll = () => {
     if(document.documentElement.scrollTop > 500){
@@ -20,5 +24,5 @@ onscroll = () => {
   
   function gototop () {
     window.scrollTo(0, 0);
-    setTimeout(function(){ document.getElementById('gototop').classList.add('d-none') }, 500);
+    setTimeout(function(){ document.getElementById('gototop').classList.add('d-none') }, 300);
   }
