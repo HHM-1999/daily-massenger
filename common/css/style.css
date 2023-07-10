@@ -1,5 +1,6 @@
 body {
   font-family: "Lora", serif;
+  font-family: 'SolaimanLipi', serif;
   font-size: 16px;
   background: #fff;
   color: #222;
@@ -50,9 +51,15 @@ li {
   position: absolute;
   z-index: -1;
 }
-.sticky-element {
-  position: sticky;
-  top: 0;
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.2s;
+  box-shadow: 0 0 2px 0 #00000051;
+  background-color: #fff;
 }
 @keyframes marquee {
   0% {
@@ -151,7 +158,7 @@ li {
   padding: 5px 0 0;
 }
 .desc .title {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 22px;
   font-weight: bold;
 }
@@ -160,7 +167,7 @@ li {
 }
 .desc .brief-line p {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: #555;
@@ -297,7 +304,8 @@ li {
 }
 .sorbosesh-heading h3 {
   color: #ebebeb;
-  font-size: 17px;
+  font-size: 19px;
+  line-height: 27px;
 }
 .sorbosesh-heading i {
   color: #ebebeb;
@@ -315,11 +323,9 @@ li {
   border-bottom: 1px solid #e2e2e2;
 }
 .sorbosesh-list li p {
-  font-size: 15px;
+  font-size: 17px;
 }
-.sorbosesh-heading h3 {
-  font-size: 16px;
-}
+
 /* Ads image */
 .ads-news-section {
   background-color: #eff5f4;
@@ -451,6 +457,36 @@ span {
   background: #fff;
   margin-right: 3px;
   border-radius: 50%;
+}
+
+/* bangladesh latest news */
+.bangladesh-title{
+  border-top: 1px solid #b9b9b9;
+  border-bottom: 4px double #b9b9b9;
+}
+.bangladesh-title h3{
+  font-size: 17px;
+  font-weight: bold;
+  color:  #006c6e;
+  line-height: 22px;
+}
+.bd-news-area{
+  font-size: 19px;
+  line-height: 27px;
+  color: #000;
+  font-weight: bold;
+
+}
+.bd-news-area:hover{
+color:  #006c6e;
+}
+.icon-bd{
+  margin-top: 14px;
+}
+.bd-bottom{
+  border-bottom:  1px solid #b9b9b9;
+  margin-top: 20px;
+  
 }
 /* Footer ads */
 .footer-ads {
