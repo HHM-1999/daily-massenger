@@ -1,6 +1,6 @@
 body {
   font-family: "Lora", serif;
-  font-family: 'SolaimanLipi', serif;
+  font-family: "SolaimanLipi", serif;
   font-size: 16px;
   background: #fff;
   color: #222;
@@ -204,7 +204,7 @@ li {
   width: 260px;
 }
 .dhakaAir-main-image img {
-  height: 485px;
+  height: 550px;
 }
 
 .dhakaAir-main-image .desc .title {
@@ -212,6 +212,21 @@ li {
   line-height: 26px;
   color: #000;
   font-weight: 600;
+}
+.caption {
+  background-color: #1c1c1cd6;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.caption .title {
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
 /* E-paper */
 .E-paper {
@@ -439,7 +454,7 @@ li {
   color: #fff;
   font-size: 18px;
   width: calc(100% - 150px);
-  padding: 0 10px;
+  padding: 0 0px;
 }
 span {
   padding-right: 25px;
@@ -460,33 +475,47 @@ span {
 }
 
 /* bangladesh latest news */
-.bangladesh-title{
+.bangladesh-title {
   border-top: 1px solid #b9b9b9;
   border-bottom: 4px double #b9b9b9;
 }
-.bangladesh-title h3{
+.bangladesh-title h3 {
   font-size: 17px;
   font-weight: bold;
-  color:  #006c6e;
+  color: #006c6e;
   line-height: 22px;
 }
-.bd-news-area{
+.bd-news-area {
   font-size: 19px;
   line-height: 27px;
   color: #000;
   font-weight: bold;
-
 }
-.bd-news-area:hover{
-color:  #006c6e;
+.bd-news-area:hover {
+  color: #006c6e;
 }
-.icon-bd{
+.icon-bd {
   margin-top: 14px;
 }
-.bd-bottom{
-  border-bottom:  1px solid #b9b9b9;
+.bd-bottom {
+  border-bottom: 1px solid #b9b9b9;
   margin-top: 20px;
-  
+}
+/* photo-video */
+/* photo */
+.button-left {
+  margin-left: 0px;
+  background: #006c6e;
+  width: 5%;
+  top: 44%;
+  bottom: 44%;
+}
+.button-right {
+  margin-right: 0px;
+  background: #006c6e;
+  width: 5%;
+  top: 44%;
+  bottom: 44%;
 }
 /* Footer ads */
 .footer-ads {
