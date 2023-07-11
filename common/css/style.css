@@ -33,7 +33,7 @@ a {
   border-top: 1px solid #ccc;
 }
 .BorderBottom {
-  border-bottom: 4px solid #ccc;
+  border-bottom: 4px double #ccc;
 }
 .BorderRight {
   border-right: 1px solid #ebebeb;
@@ -68,6 +68,11 @@ li {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.img-position{
+  position: relative;
+  padding: 17px 0 0 0;
 }
 /* header start */
 
@@ -126,12 +131,39 @@ li {
   text-decoration: none;
 }
 /* navbar */
-.Dheadernav .navbar-nav .nav-item .nav-link {
+.headernav .navbar-nav .nav-item .nav-link {
   font-weight: 400;
   color: #000;
   padding: 0.5rem 0.5rem 0.62rem 1rem;
   font-size: 16px;
   font-family: "Barlow", sans-serif;
+}
+.navbar-expand-lg .navbar-nav .contentCountry{
+  margin-left: 32%;
+}
+.navbar-expand-lg .navbar-nav .contentMore{
+  margin-left: 87%;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+
+  background-color: #212529;
+  border-radius: 0;
+  padding: 0;
+
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a{
+  text-decoration: none;
+  color: #ccc;
+    font-size: 16px;
+  font-family: "Barlow", sans-serif;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
+  color: #000;
+}
+
+.dropdown{
+  position: static;
+  display: inline-block;
 }
 .search-area {
   display: flex;
@@ -392,6 +424,7 @@ li {
   margin-top: 4px;
 }
 
+
 /* Footer */
 .Footer-top {
   background-color: #eee;
@@ -516,6 +549,73 @@ span {
   width: 5%;
   top: 44%;
   bottom: 44%;
+}
+/* photo-video section */
+/* photo */
+.photo-icon{
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  border-radius: 50%;
+  background-color: #65006eec;
+  border-radius: 50%;
+  
+  }
+  .photo-icon i{
+    color: #fff;
+    font-size: 23px;
+    font-weight: 400px;
+    margin: 16px 3px 0px 16px;
+  
+  }
+  .photo-section .carousel-section{
+    background-color: #1c1c1cd6;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  }
+  .photo-section .carousel-section .title{
+    font-size: 22px;
+  }
+.bazarIcon{
+    margin-left: -20px;
+  }
+.BazarList{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; ;
+}
+.BazarList .photo-icon{
+left: 34%;
+top: 29%;
+}
+.BazarList .photo-icon i{
+  font-size: 22px;
+  margin: 16px 3px 0px 20px;
+  }
+.paikariBazar .photo-icon i{
+  margin: 16px 3px 0px 21px;
+}
+.bazar img{
+  height: 230px;
+}
+/* Sports section */
+.sports-area{
+  border-bottom: 1px solid #ebebeb;
+}
+.sports-area .title{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.sports-area-bottom{
+  border-bottom: 1px solid #ebebeb;}
+.marginTop{
+  margin-top: -4px;
 }
 /* Footer ads */
 .footer-ads {
