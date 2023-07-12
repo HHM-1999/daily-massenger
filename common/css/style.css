@@ -51,6 +51,9 @@ li {
   position: absolute;
   z-index: -1;
 }
+.border-Bottom {
+  border-bottom: 1px solid #ebebeb;
+}
 
 .sticky {
   position: fixed;
@@ -69,10 +72,12 @@ li {
     transform: translateX(-100%);
   }
 }
-
-.img-position{
+.img-position {
   position: relative;
   padding: 17px 0 0 0;
+}
+.img-height img {
+  height: 124px;
 }
 /* header start */
 
@@ -138,30 +143,28 @@ li {
   font-size: 16px;
   font-family: "Barlow", sans-serif;
 }
-.navbar-expand-lg .navbar-nav .contentCountry{
+.navbar-expand-lg .navbar-nav .contentCountry {
   margin-left: 32%;
 }
-.navbar-expand-lg .navbar-nav .contentMore{
+.navbar-expand-lg .navbar-nav .contentMore {
   margin-left: 87%;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu{
-
+.navbar-expand-lg .navbar-nav .dropdown-menu {
   background-color: #212529;
   border-radius: 0;
   padding: 0;
-
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu a{
+.navbar-expand-lg .navbar-nav .dropdown-menu a {
   text-decoration: none;
   color: #ccc;
-    font-size: 16px;
+  font-size: 16px;
   font-family: "Barlow", sans-serif;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
+.navbar-expand-lg .navbar-nav .dropdown-menu a:hover {
   color: #000;
 }
 
-.dropdown{
+.dropdown {
   position: static;
   display: inline-block;
 }
@@ -190,7 +193,7 @@ li {
   padding: 5px 0 0;
 }
 .desc .title {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 22px;
   font-weight: bold;
 }
@@ -310,7 +313,7 @@ li {
 }
 .opinion-topSection .BordBottom {
   border-bottom: 1px solid #ebebeb;
-  margin-left: 2px;
+  margin-left: 0;
 }
 .desc i {
   font-size: 12px;
@@ -335,7 +338,7 @@ li {
   color: #ebebeb;
 }
 .lead-news {
-  padding: 15px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #ebebeb;
 }
 .lead-newslist h2 {
@@ -382,6 +385,10 @@ li {
 .image-height {
   height: 253px;
 }
+/* Business */
+.area-section .title h2 {
+  font-size: 20px;
+}
 /* TREADING NEWS */
 .treading-title h2 {
   font-size: 20px;
@@ -423,7 +430,6 @@ li {
   border-bottom: 1px solid #ebebeb;
   margin-top: 4px;
 }
-
 
 /* Footer */
 .Footer-top {
@@ -550,9 +556,17 @@ span {
   top: 44%;
   bottom: 44%;
 }
+/* Entertainment */
+.entertainment-area title {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /* photo-video section */
 /* photo */
-.photo-icon{
+.photo-icon {
   width: 3.5rem;
   height: 3.5rem;
   position: absolute;
@@ -561,62 +575,71 @@ span {
   border-radius: 50%;
   background-color: #65006eec;
   border-radius: 50%;
-  
-  }
-  .photo-icon i{
-    color: #fff;
-    font-size: 23px;
-    font-weight: 400px;
-    margin: 16px 3px 0px 16px;
-  
-  }
-  .photo-section .carousel-section{
-    background-color: #1c1c1cd6;
+}
+.photo-icon i {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400px;
+  margin: 16px 3px 0px 16px;
+}
+.photo-section .carousel-section {
+  background-color: #1c1c1cd6;
   color: #fff;
   padding: 10px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  }
-  .photo-section .carousel-section .title{
-    font-size: 22px;
-  }
-.bazarIcon{
-    margin-left: -20px;
-  }
-.BazarList{
+}
+.photo-section .carousel-section .title {
+  font-size: 22px;
+}
+.bazarIcon {
+  margin-left: -20px;
+}
+.BazarList {
   border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc; ;
+  border-bottom: 1px solid #ccc;
 }
-.BazarList .photo-icon{
-left: 34%;
-top: 29%;
+.BazarList .photo-icon {
+  left: 34%;
+  top: 29%;
 }
-.BazarList .photo-icon i{
+.BazarList .photo-icon i {
   font-size: 22px;
   margin: 16px 3px 0px 20px;
-  }
-.paikariBazar .photo-icon i{
+}
+.paikariBazar .photo-icon i {
   margin: 16px 3px 0px 21px;
 }
-.bazar img{
+.bazar img {
   height: 230px;
 }
 /* Sports section */
-.sports-area{
+.sports-area {
   border-bottom: 1px solid #ebebeb;
 }
-.sports-area .title{
+.sports-area .title {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
 }
-.sports-area-bottom{
-  border-bottom: 1px solid #ebebeb;}
-.marginTop{
+
+.marginTop {
   margin-top: -4px;
 }
+/* Science and it */
+.sci-it-img .photo-section .carousel-sections {
+  padding: 0 4px 1px 5px;
+  color: #fff;
+}
+.sci-it-img .photo-section .carousel-sections .title {
+  font-size: 20px;
+  margin-top: -56px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
 /* Footer ads */
 .footer-ads {
   position: fixed;
@@ -624,7 +647,7 @@ top: 29%;
   height: 67px;
   left: 0;
   right: 0;
-  background: #f0f0f054;
+
   transition: opacity 500ms;
   visibility: visible;
   opacity: 1;
