@@ -173,12 +173,12 @@ li {
 }
 .search-button {
   background-color: #006c6e;
-  padding: 10px 14px 9px;
+  padding: 5px 12px 8px;
   margin-bottom: 0px;
 }
 .search-button i {
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
 }
 .dropdown-menu.show .drop-menu {
   background-color: #333;
@@ -193,9 +193,9 @@ li {
   padding: 5px 0 0;
 }
 .desc .title {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 22px;
-  font-weight: bold;
+  font-weight: 600;
 }
 .desc .title:hover {
   color: #006c6e;
@@ -480,7 +480,7 @@ li {
 .scrollheading {
   background: #006c6e;
   width: 140px;
-  height: 33px;
+  height: 35px;
 }
 .scroll-section {
   z-index: 9999;
@@ -629,15 +629,14 @@ span {
   margin-top: -4px;
 }
 /* Science and it */
-.sci-it-img .photo-section .carousel-sections {
-  padding: 0 4px 1px 5px;
-  color: #fff;
-}
+
 .sci-it-img .photo-section .carousel-sections .title {
   font-size: 20px;
   margin-top: -56px;
   font-weight: 600;
   line-height: 26px;
+  padding: 0 4px 1px 5px;
+  color: #fff;
 }
 
 /* Footer ads */
@@ -688,7 +687,7 @@ span {
 .gotoTop {
   position: fixed;
   bottom: 50px;
-  right: 15px;
+  right: 40px;
   cursor: pointer;
   height: 50px;
   width: 50px;
