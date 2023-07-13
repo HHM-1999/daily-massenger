@@ -1,6 +1,6 @@
 body {
-  font-family: "Lora", serif;
   font-family: "SolaimanLipi", serif;
+  font-family: "Lora", serif;
   font-size: 16px;
   background: #fff;
   color: #222;
@@ -12,6 +12,12 @@ picture {
   aspect-ratio: 1.7777;
   object-fit: cover;
   object-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 .container {
   max-width: 1300px !important;
@@ -54,7 +60,6 @@ li {
 .border-Bottom {
   border-bottom: 1px solid #ebebeb;
 }
-
 .sticky {
   position: fixed;
   top: 0px;
@@ -82,13 +87,14 @@ li {
 /* header start */
 
 /*  top Area */
-.header-part {
-  margin-left: 16px;
-}
+
 .top-area {
   padding: 15px 0;
 }
-.date-time p {
+.date-time {
+  padding: 0;
+}
+p {
   font-size: 14px;
 }
 .date-time i {
@@ -124,13 +130,22 @@ li {
   background: #333;
   color: #fff;
 }
+.social-link ul li a .fa-facebook-f:hover {
+  background: #3b5998;
+}
+.social-link ul li a .fa-twitter:hover {
+  background: #1998c8;
+}
+.social-link ul li a .fa-youtube:hover {
+  background: #ae1e1a;
+}
 .bangla-button {
   background: #006c6e;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-family: "SolaimanLipi", serif;
   font-weight: bold;
-  padding: 3px 10px 1px;
+  padding: 6px 7px 4px;
   margin-right: 5px !important;
   border-radius: 3px;
   text-decoration: none;
@@ -144,7 +159,7 @@ li {
   font-family: "Barlow", sans-serif;
 }
 .navbar-expand-lg .navbar-nav .contentCountry {
-  margin-left: 32%;
+  margin-left: 34%;
 }
 .navbar-expand-lg .navbar-nav .contentMore {
   margin-left: 87%;
@@ -170,6 +185,7 @@ li {
 }
 .search-area {
   display: flex;
+  margin-left: 20px;
 }
 .search-button {
   background-color: #006c6e;
@@ -193,9 +209,14 @@ li {
   padding: 5px 0 0;
 }
 .desc .title {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 21px;
+  line-height: 24px;
   font-weight: 600;
+}
+.main-top-section .text-resize h1 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: bold;
 }
 .desc .title:hover {
   color: #006c6e;
@@ -206,11 +227,13 @@ li {
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: #555;
-  font-size: 15px;
+  font-size: 17px;
   font-family: "Barlow", sans-serif;
   font-weight: 300;
   letter-spacing: -0.3px;
   margin-top: 0;
+  line-height: 1.5;
+  font-weight: 300;
 }
 .opinion-img img {
   border-radius: 50%;
@@ -643,10 +666,10 @@ span {
 .footer-ads {
   position: fixed;
   bottom: 30px;
-  height: 67px;
+  height: 40px;
   left: 0;
   right: 0;
-
+  background: #f0f0f054;
   transition: opacity 500ms;
   visibility: visible;
   opacity: 1;
@@ -686,7 +709,7 @@ span {
 /* back to top */
 .gotoTop {
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
   right: 40px;
   cursor: pointer;
   height: 50px;
