@@ -12,28 +12,6 @@ exitButton.addEventListener('click', function () {
 });
 
 
-///goto button///
-
-// onscroll = () => {
-//   if (document.documentElement.scrollTop > 500) {
-//     setTimeout(function () { document.getElementById('gototop').classList.remove('d-none') }, 300);
-//   } else {
-//     setTimeout(function () { document.getElementById('gototop').classList.add('d-none') }, 300);
-//   }
-// };
-
-// function gototop() {
-//   window.scrollTo(0, 0);
-//   setTimeout(function () { document.getElementById('gototop').classList.add('d-none') }, 300);
-//   gototop.addEventListener('click', function () {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth'
-//     });
-//   });
-// }
-
-
 onscroll = () => {
   if (document.documentElement.scrollTop > 500) {
     setTimeout(function () { document.getElementById('gototop').classList.remove('d-none') }, 300);
@@ -66,22 +44,3 @@ function handleScroll() {
     stickyElement.classList.remove('sticky');
   }
 }
-
-// ///Drop-down-button////
-
-
-// var dropdownBtn = document.querySelector(".dropbtn");
-// var dropdownContent = document.querySelector(".dropdown-content");
-
-// function toggleDropdown() {
-//   dropdownContent.classList.toggle("show");
-// }
-// window.onclick = function(event) {
-//   if (!event.target.matches('.dropbtn')) {
-//     if (dropdownContent.classList.contains('show')) {
-//       dropdownContent.classList.remove('show');
-//     }
-//   }
-// };
-
-// dropdownBtn.addEventListener("click", toggleDropdown);
