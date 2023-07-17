@@ -44,3 +44,22 @@ function handleScroll() {
     stickyElement.classList.remove('sticky');
   }
 }
+
+
+
+//search box//
+function showSearchBox() {
+  var searchContainer = document.getElementById("searchContainer");
+  searchContainer.classList.remove("hidden");
+}
+function hideSearchBox() {
+  var searchContainer = document.getElementById("searchContainer");
+  searchContainer.classList.add("hidden");
+}
+
+function performSearch() {
+  var searchInput = document.getElementById("searchInput").value;
+  // Perform your search operation using the search input value
+  // Add your search logic here (e.g., making an API request, filtering data)
+  console.log("Performing search: " + searchInput);
+}

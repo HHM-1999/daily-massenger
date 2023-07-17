@@ -182,7 +182,7 @@
                       </li>
                     </ul>
                     <div class="search-area justify-content-end">
-                      <div class="search-button">
+                      <div onclick="showSearchBox()" class="search-button">
                         <i class="fa-solid fa-magnifying-glass"></i>
                       </div>
                     </div>
@@ -194,6 +194,39 @@
         </div>
       </div>
     </div>
+    <!-- <div id="search" class="search_block" style="display: block;">
+      <div class="col-12">
+        <form id="cse-search-box" action="/keywordsearch" method="get">
+          <div class="search-input search_logo display-flex">
+            <input type="hidden" name="cx" value="ea09f3fc43677ad37">
+            <input type="hidden" name="cof" value="FORID:10">
+            <input type="hidden" name="ie" value="UTF-8">
+            <input name="q" class="search-bar" placeholder="Search..." title="Search" type="search">
+            <button><i class="fa fa-search"></i></button>
+            <a class="close-search" href="/"><i class="fa fa-times"></i></a>
+          </div>
+        </form>
+      </div>
+    </div> -->
+
+    <div id="searchContainer" class="hidden">
+      <div id="search" class="search_block" style="display: block;">
+        <div class="col-12">
+          <form id="cse-search-box" action="/keywordsearch" method="get">
+            <div class="search_logo display-flex">
+              <input type="hidden" name="cx" value="ea09f3fc43677ad37">
+              <input type="hidden" name="cof" value="FORID:10">
+              <input type="hidden" name="ie" value="UTF-8">
+              <input name="q" class="search-bar" placeholder="Search..." title="Search" type="search">
+              <button onclick="performSearch()"><i class="fa fa-search"></i></button>
+              <a onclick="hideSearchBox()" class="close-search" href="/"><i class="fa fa-times"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
   </header>
   <!-- back to top button -->
   <div class="container">
@@ -207,8 +240,8 @@
     <!-- part 1 -->
     <div class="container">
       <div class="main-top-section">
-        <div class="row mt-3">
-          <div class="col-lg-8 col-sm-12 BorderRight">
+        <div class="row mt-2">
+          <div class="col-lg-8 col-sm-12 BorderRight" style="width: 73%;">
             <!-- lead news -->
             <div class="lead-news">
               <a href="#">
@@ -242,7 +275,7 @@
               </a>
             </div>
             <!-- lead news ads -->
-            <div class="lead-news-ads mt-5">
+            <div class="lead-news-ads mt-3">
               <div class="row">
                 <div class="col-md-12">
                   <picture>
@@ -254,7 +287,7 @@
             </div>
             <!-- Inner top 1 -->
             <div class="innertop BordBottom">
-              <div class="row mt-5">
+              <div class="row mt-3">
                 <div class="col-lg-6 col-12 BorderRight">
                   <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col-lg-12">
@@ -270,8 +303,8 @@
                         </div>
 
                         <a href="/">
-                          <div class="desc mt-1">
-                            <h3 class="title text">BNP, like-minded parties to announce one point movement this week
+                          <div class="desc">
+                            <h3 class="title text">BNP, like-minded parties to announce one point movement
                             </h3>
                             <div class="brief-line">
                               <p>BNP and the like-minded parties are going to announce one-point anti-government
@@ -301,7 +334,7 @@
                       </figure>
                     </div>
                     <a href="/">
-                      <div class="desc mt-1">
+                      <div class="desc">
                         <h3 class="title text">Market manipulators continue to rule over the market</h3>
                         <div class="brief-line mt-4">
                           <p>In the face of a staggering increase in food prices, households across the country find
@@ -328,7 +361,7 @@
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/businesslist2.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/businesslist2.jpg"
                                     alt="lead-news-image"
                                     title="PM to open South Asia’s largest single STP in Dhaka today">
                                 </picture>
@@ -338,8 +371,8 @@
                         </div>
                         <div class="col-md-8">
                           <div class="desc">
-                            <h6 class="title ">Police maintain strict vigilance
-                            </h6>
+                            <h3 class="title ">Hero Alam says his agents ‘assaulted’ by AL activists
+                            </h3>
                             <div class="brief-line">
                               <p>BNP and the like-minded parties are going to announce one-point anti-government
                                 movement this week, top leaders said. The anti-government movement leader and general
@@ -354,13 +387,13 @@
 
                     </div>
                     <div class="toplist1 innertop ">
-                      <div class="row mt-3">
+                      <div class="row">
                         <div class="col-md-4">
                           <div class="imgSection">
-                            <div class="imgresize">
+                            <div class="imgresize mb-2 mt-2">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/businesslist4.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/businesslist4.jpg"
                                     alt="lead-news-image"
                                     title="PM to open South Asia’s largest single STP in Dhaka today">
                                 </picture>
@@ -370,8 +403,9 @@
                         </div>
                         <div class="col-md-8">
                           <div class="desc">
-                            <h6 class="title ">Police maintain strict vigilance
-                            </h6>
+                            <h3 class="title mt-1 ">Independent candidate Tariqul Islam Bhuiyan boycotts Dhaka-17
+                              by-polls
+                            </h3>
                             <div class="brief-line">
                               <p>BNP and the like-minded parties are going to announce one-point anti-government
                                 movement this week, top leaders said. The anti-government movement leader and general
@@ -384,13 +418,13 @@
                         </div>
                       </div>
                       <div class="toplist1 innertop">
-                        <div class="row mt-3">
+                        <div class="row">
                           <div class="col-md-4">
                             <div class="imgSection">
-                              <div class="imgresize">
+                              <div class="imgresize mb-2 mt-2">
                                 <figure class="imgviewer">
                                   <picture class="Fixing-ratio">
-                                    <img class="img100 img-fluid" src="./media/imgAll/businesslist3.jpg"
+                                    <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/businesslist3.jpg"
                                       alt="lead-news-image"
                                       title="PM to open South Asia’s largest single STP in Dhaka today">
                                   </picture>
@@ -400,8 +434,8 @@
                           </div>
                           <div class="col-md-8">
                             <div class="desc">
-                              <h6 class="title ">Police maintain strict vigilance
-                              </h6>
+                              <h3 class="title mt-1 ">Police maintain strict vigilance
+                              </h3>
                               <div class="brief-line">
                                 <p>BNP and the like-minded parties are going to announce one-point anti-government
                                   movement this week, top leaders said. The anti-government movement leader and general
@@ -419,13 +453,14 @@
                   </div>
                 </div>
                 <div class="col-lg-4">
-                  <div class="dhakaAir-main-image">
+                  <div class="
+                  Air-main-image">
                     <div class="dhakaAirSize">
                       <div class="col-sm-12">
                         <div class="row">
                           <div class="col-lg-12 col-5">
                             <div class="imgSection">
-                              <div class="imgresize">
+                              <div class="imgresize mb-2 mt-2">
                                 <figure class="imgviewer">
                                   <picture class="Fixing-ratio">
                                     <img class="img100 img-fluid Fixing-ratio"
@@ -437,9 +472,9 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-12 col-7">
+                          <div class="col-lg-12 col-7 sci-it-img ">
                             <div class="desc">
-                              <div class="title">
+                              <div class="dhaka-air">
                                 <h3>
                                   Quader slams BNP’s attempt to shift blame for internal chaos
                                 </h3>
@@ -463,7 +498,7 @@
               <div class="E-paperBanner">
                 <h5 class="text-center mt-2"><b>E-PAPER</b></h5>
               </div>
-              <div class="MagazineArea  mb-5 ">
+              <div class="MagazineArea ">
                 <div class="magezineImg">
 
                   <div class="imgresize">
@@ -478,21 +513,22 @@
                 </div>
               </div>
             </div>
-            <div class="E-paperAds">
+            <div class="E-paperAds mt-3">
               <a href="#">
-                <img class="img100 img-fluid" src="./media/imgAll/E-paperAds.jpg" alt="Advertisement"
+                <img class="img100 img-fluid"
+                  src="https://www.dailymessenger.net/media/Advertisement/W300x250-13-07-23.jpg" alt="Advertisement"
                   title="Advertisement">
               </a>
             </div>
-            <div class="Opinion">
+            <div class="Opinion mt-3">
               <div class="opinion-section mt-2 d-flex">
                 <div class="desc">
-                  <h3 class=" title mx-2">Opinion <i class="fa-solid fa-infinity mb-2"></i></h3>
+                  <h3 class=" title mx-2">OPINION <i class="fa-solid fa-infinity mb-2"></i></h3>
 
                 </div>
 
               </div>
-              <div class="opinion-topSection">
+              <div class="opinion-topSection mt-3">
                 <div class="row BordBottom  ">
                   <div class="col-7 ">
 
@@ -530,7 +566,7 @@
 
                 <!-- opinion list -->
                 <div class="opinion-area ">
-                  <div class="opinionlist BordBottom ">
+                  <div class="opinionlist mt-3 BordBottom ">
                     <div>
                       <div class="row">
                         <div class="col-4">
@@ -540,7 +576,7 @@
                               title="Bangladeshi peacekeeper’s role in Mali’s MINUSMA mission">
                           </div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-8 mt-2">
 
 
 
@@ -626,7 +662,7 @@
         </div>
       </div>
       <!-- Advertisement -->
-      <div class="BorderTop mt-4 Ads d-flex justify-content-center">
+      <div class="BorderTop mt-1 Ads d-flex justify-content-center">
         <a href="#">
           <img class="img-fluid img100" src="./media/common/BashundharaFoodBeverage.gif" alt="Advertisement"
             title="Advertisement">
@@ -657,9 +693,9 @@
                           </picture>
                         </figure>
                       </div>
-                      <div class="desc mt-2 ">
+                      <div class="desc ">
                         <h2 class="title ">টেকনাফে সাগর কিনারে মিলল ৩৪ কেজি ওজনের পোয়া মাছ</h2>
-                        <div class="brife-line mt-3">
+                        <div class="brife-line ">
                           <p style="  color: #555;">টেকনাফে এক জেলের জালে ধরা পড়েছে ৩৪ কেজি ওজনের একটি পোয়া মাছ। সাগরে
                             ৬৫ দিনের মাছ ধরার
                             নিষেধাজ্ঞায় সদর ইউনিয়নের হাবিব পাড়ার বাসিন্দা সৈয়দ আহমদ সাগর পাড়ে জাল ফেলে। এতে পোয়া মাছটি
@@ -673,7 +709,7 @@
                 <div class="col-lg-5 col-12">
 
                   <a href="#">
-                    <div class="lead-news">
+                    <div class="lead-news mt-2">
                       <div>
                         <div class="row g-3">
                           <div class="col-5">
@@ -694,58 +730,62 @@
                       </div>
                     </div>
                   </a>
-                  <a href="#">
-                    <div class="lead-news">
-                      <div>
-                        <div class="row g-3">
-                          <div class="col-5">
-                            <div class="imgresize">
-                              <figure class="imgviewer">
-                                <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/lead-news-list2.jpg"
-                                    alt="lead-news-image"
-                                    title="AL internal feud takes serious turn ahead of national polls">
-                                </picture>
-                              </figure>
+                  <div class="mt-4">
+                    <a href="#">
+                      <div class="lead-news">
+                        <div>
+                          <div class="row g-3">
+                            <div class="col-5">
+                              <div class="imgresize">
+                                <figure class="imgviewer">
+                                  <picture class="Fixing-ratio">
+                                    <img class="img100 img-fluid" src="./media/imgAll/lead-news-list2.jpg"
+                                      alt="lead-news-image"
+                                      title="AL internal feud takes serious turn ahead of national polls">
+                                  </picture>
+                                </figure>
 
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-7">
-                            <div class="  bangla-desc mt-2">
-                              <h2 class="title">ময়মনসিংহে স্বর্ণ বিজয়ী স্বর্নাকে সংবর্ধনা</h6>
+                            <div class="col-7">
+                              <div class="  bangla-desc mt-2">
+                                <h2 class="title">ময়মনসিংহে স্বর্ণ বিজয়ী স্বর্নাকে সংবর্ধনা</h6>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
 
-                  <a href="#">
-                    <div class="lead-news">
-                      <div>
-                        <div class="row g-3">
-                          <div class="col-5">
-                            <div class="imgresize">
-                              <figure class="imgviewer">
-                                <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/lead-news-list3.jpg"
-                                    alt="lead-news-image"
-                                    title="AL internal feud takes serious turn ahead of national polls">
-                                </picture>
-                              </figure>
+                  <div class="mt-4">
+                    <a href="#">
+                      <div class="lead-news">
+                        <div>
+                          <div class="row g-3">
+                            <div class="col-5">
+                              <div class="imgresize">
+                                <figure class="imgviewer">
+                                  <picture class="Fixing-ratio">
+                                    <img class="img100 img-fluid" src="./media/imgAll/lead-news-list3.jpg"
+                                      alt="lead-news-image"
+                                      title="AL internal feud takes serious turn ahead of national polls">
+                                  </picture>
+                                </figure>
 
+                              </div>
                             </div>
-                          </div>
-                          <div class="col-7">
-                            <div class="bangla-desc mt-2">
-                              <h2 class="title">‘সৎ থেকে শতভাগ দেওয়ার চেষ্টা করেছি’: তামিম</h2>
+                            <div class="col-7">
+                              <div class="bangla-desc mt-2">
+                                <h2 class="title">‘সৎ থেকে শতভাগ দেওয়ার চেষ্টা করেছি’: তামিম</h2>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
-                  <div class="mt-3">
+                    </a>
+                  </div>
+                  <div class="mt-4">
                     <a href="#">
                       <div>
                         <div class=" row g-3">
@@ -782,34 +822,34 @@
                 </div>
               </div>
               <ul class="sorbosesh-list ">
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2"> ১৪২ রানে হেরে আফগান্দের কাছে সিরিজ হেরেছে বাংলাদেশ </p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">নির্বাচনের অংশ নিয়ে জনপ্রিয়তা যাচাই করুণ ঃ তথ্যমন্ত্রী</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">দেশে ফিরেছেন ২৯ হাজার ৪ হাজি, মৃত্যু ৯১</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">যুক্তরাষ্ট্রে বিমান বিধ্বস্ত, নিহত ৬</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">ধর্মপাশায় ডোবার পানিতে ডুবে শিশুর মৃত্যু</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">জামালপুরে আওয়ামী লীগ অফিসে ‘স্মার্ট কর্ণার’ উদ্বোধন</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">জুলাই মাসে শ্রীপুর উপজেলা স্বাস্থ্য কমপ্লেক্সে ২৫ ডেঙ্গু রোগী শনাক্ত</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">আশুলিয়ায় আওয়ামী লীগ নেতাকে বহিষ্কার ও গ্রেপ্তারের দাবিতে মানববন্ধন</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">জামালপুরে আওয়ামী লীগ অফিসে ‘স্মার্ট কর্ণার’ উদ্বোধন</p>
                 </li>
-                <li class="mt-2">
+                <li>
                   <p class=" title mx-2">রিজার্ভ কমে যাওয়ায় রুপিতে বাণিজ্য শুরু ১১ জুলাই</p>
                 </li>
 
@@ -987,9 +1027,9 @@
                     </div>
                     <a href="#">
                       <div class="bangladesh-news">
-                        <div class="desc mt-2 ">
+                        <div class="desc">
                           <h3 class=" bd-news-area title">Cyber criminals spreading rumors ahead of nat’l election</h2>
-                            <div class="brief-line mt-2">
+                            <div class="brief-line">
                               <p>Cyber criminals have once again become active ahead of the upcoming National election,
                                 spreading rumors against important individuals and government organizations.Operating
                                 under
@@ -1012,7 +1052,7 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-3">
                           <div class="col-7">
                             <div class="desc mt-4">
                               <h3 class="title"><b>EU team meets foreign affairs ministry officials</b></h3>
@@ -1037,7 +1077,7 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-3">
                           <div class="col-7">
                             <div class="desc mt-4">
                               <h3 class="title"><b>Cyber criminals spreading rumors ahead of nat’l election</b></h3>
@@ -1063,7 +1103,7 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-3">
                           <div class="col-7">
                             <div class="desc mt-4">
                               <h3 class="title"><b>Diplomatic maneuvrings on to pressure government for fair tolls </b>
@@ -1089,7 +1129,7 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-3">
                           <div class="col-7">
                             <div class="desc  mt-4">
                               <h3 class="title"><b>Hasan greets Bhutanes King at HSIA</b></h3>
@@ -1136,11 +1176,9 @@
                     </div>
                     <div class="desc bangla-lead">
                       <h3 class=" bd-news-area title">6 killed in southern China stabbing</h2>
-                        <div class="brief-line mt-2">
+                        <div class="brief-line">
                           <p>Six people were killed and one wounded in an attack at a kindergarten in Lianjiang in
-                            south China`s Guangdong province on Monday, a spokeswoman for the city government said. "The
-                            victims include one teacher, two parents and three students... and one suspect has been
-                            arrested," she said.</p>
+                            south China`s Guangdong province on Monday, a spokeswoman for the city government said.</p>
                         </div>
                     </div>
                   </div>
@@ -1149,17 +1187,17 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
                             <div class="desc">
-                              <h2 class="title"><b>15 deads in India Monsoon Floods</b></h2>
+                              <h2 class="title mt-2">15 deads in India Monsoon Floods</h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-2 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid " src="./media/imgAll/inter-list1.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/inter-list1.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1174,17 +1212,17 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
-                            <div class="desc mt-4">
-                              <h2 class="title"><b>12 injured in bus accident in north Moscow</b></h2>
+                            <div class="desc">
+                              <h2 class="title mt-2">12 injured in bus accident in north Moscow</h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-3 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid " src="./media/imgAll/inter-list2.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio " src="./media/imgAll/inter-list2.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1200,17 +1238,17 @@
                   <a href="#">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
-                            <div class="desc mt-4">
-                              <h2 class="title"><b>6 killed in southern California plane crash </b></h2>
+                            <div class="desc">
+                              <h2 class="title mt-2"><b>6 killed in southern California plane crash </b></h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-3 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/inter-list4.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/inter-list4.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1222,19 +1260,19 @@
                     </div>
                   </a>
                   <a href="#">
-                    <div class="lead-news">
+                    <div>
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
-                            <div class="desc  mt-4">
-                              <h2 class="title"><b>14 people killed in brazil</b></h2>
+                            <div class="desc">
+                              <h2 class="title mt-3"><b>14 people killed in brazil</b></h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-3 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/inter-list3.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/inter-list3.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1273,10 +1311,10 @@
 
                     </div>
                     <a href="#">
-                      <div class="desc mt-2">
+                      <div class="desc">
                         <h3 class=" bd-news-area title">BNP has secret ties with Israeli intelligence agency: Quader
                         </h3>
-                        <div class=" poli-para mt-2">
+                        <div class=" poli-para">
                           <p>Awami League (AL) General Secretary Obaidul Quader said BNP has secret ties with Israel
                             and
                             its intelligence agency. "BNP has secret relations with Israel and its intelligence
@@ -1295,18 +1333,18 @@
                   <a href="">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
                             <div class="desc mt-2">
                               <h2 class="title"><b>Approach to foreigners with internal issues equates to anti-state
                                   activities : Hasan</b></h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5  mt-4 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid " src="./media/imgAll/politics-list1.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio " src="./media/imgAll/politics-list1.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1321,17 +1359,17 @@
                   <a href="">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
                             <div class="desc mt-2">
                               <h2 class="title"><b>Countrymen wouldn’t allow BNP to do ill politics: Dr. Hasan</b></h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-3 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid " src="./media/imgAll/politics-list2.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/politics-list2.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1346,17 +1384,17 @@
                   <a href="">
                     <div class="lead-news">
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
                             <div class="desc mt-2">
                               <h2 class="title"><b>‘Govt amended RPO to hold next polls unilaterally’</b></h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-3 mb-2">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/politics-list3.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/politics-list3.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1369,9 +1407,9 @@
                     </div>
                   </a>
                   <a href="">
-                    <div class="lead-news">
+                    <div>
                       <div class="lead-newslist">
-                        <div class="row g-0">
+                        <div class="row g-2">
                           <div class="col-7">
                             <div class="desc  mt-2">
                               <h2 class="title"><b>‘Gsmartphones by using ‘Pegasus’ spyware’ovt hacking opposition
@@ -1379,11 +1417,11 @@
                               </h2>
                             </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-5 mt-3">
                             <div class="imgresize">
                               <figure class="imgviewer">
                                 <picture class="Fixing-ratio">
-                                  <img class="img100 img-fluid" src="./media/imgAll/politics-list4.jpg"
+                                  <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/politics-list4.jpg"
                                     alt="lead-news-image"
                                     title="AL internal feud takes serious turn ahead of national polls">
                                 </picture>
@@ -1561,7 +1599,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 ">
               <div class="imgresize">
                 <figure class="imgviewer">
                   <picture class="Fixing-ratio">
@@ -1573,8 +1611,8 @@
               </div>
 
               <a href="">
-                <div class="desc mt-1">
-                  <h3 class="title">Tamim to play for Fortune Barishal in next BPL</h3>
+                <div class=" sportEndside">
+                  <h3>2nd t20I stopped due to rain</h3>
                   <div class="brief-line">
                     <p>Opener Tamim Iqbal joined Fortune Barishal to play for them in the next Bangladesh Premier League
                       (BPL), the franchise confirmed on Saturday (8 July). Barishal team`s chairman Mizanur Rahman
@@ -1600,8 +1638,8 @@
                 </figure>
               </div>
               <a href="#">
-                <div class="desc mt-3">
-                  <h3 class="title">Bangladesh elected to bowl first</h3>
+                <div class="desc">
+                  <h3>Bangladesh elected to bowl first</h3>
                 </div>
               </a>
             </div>
@@ -1616,8 +1654,8 @@
 
               </div>
               <a href="#">
-                <div class="desc mt-3">
-                  <h3 class="title">Tamim changes retirement decision on PM’s intervention</h3>
+                <div class="desc">
+                  <h3>Tamim changes retirement decision on PM’s intervention</h3>
                 </div>
               </a>
             </div>
@@ -1633,8 +1671,8 @@
               </div>
 
               <a href="">
-                <div class="desc mt-3">
-                  <h3 class="title">Tamim at Ganabhaban to meet PM</h3>
+                <div class="desc">
+                  <h3>Tamim at Ganabhaban to meet PM</h3>
                 </div>
               </a>
             </div>
@@ -1649,8 +1687,8 @@
 
               </div>
               <a href="#">
-                <div class="desc mt-3">
-                  <h3 class="title">Tamim announces retirement from international cricket</h3>
+                <div class="desc">
+                  <h3>Tamim announces retirement from international cricket</h3>
                 </div>
               </a>
             </div>
@@ -1675,7 +1713,7 @@
             <div class="row">
               <div class="col-9 BorderRight">
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-lg-4 col-12">
                     <div class="desc">
                       <h3 class="title">Illegal sand mining threatens roads, croplands in Bandarban </h3>
                       <div class="brief-line">
@@ -1693,7 +1731,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-8">
+                  <div class="col-lg-8 col-12">
                     <div class="imgresize">
                       <figure class="imgviewer">
                         <picture class="Fixing-ratio">
@@ -1715,17 +1753,17 @@
                         <div class="imgresize">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid" src="./media/imgAll/countrylist1.jpg" alt="Paikari Bazar"
-                                title="Paikari Bazar">
+                              <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/countrylist1.jpg"
+                                alt="Paikari Bazar" title="Paikari Bazar">
                             </picture>
                           </figure>
 
 
                         </div>
                       </div>
-                      <div class="col-7 bazar-news">
-                        <div class="desc">
-                          <h2 class="title">
+                      <div class="col-7 bazar-desc">
+                        <div class="desc mt-2">
+                          <h2>
                             3 killed in clash over land dispute in Rajshahi
                           </h2>
                         </div>
@@ -1741,17 +1779,17 @@
                         <div class="imgresize">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid" src="./media/imgAll/countrylist2.jpg" alt="Paikari Bazar"
-                                title="Paikari Bazar">
+                              <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/countrylist2.jpg"
+                                alt="Paikari Bazar" title="Paikari Bazar">
                             </picture>
                           </figure>
 
 
                         </div>
                       </div>
-                      <div class="col-7 bazar-news">
-                        <div class="desc">
-                          <h2 class="title">
+                      <div class="col-7 bazar-desc">
+                        <div class="desc mt-2">
+                          <h2>
                             ARSA commander killed in ‘gunfight’ at Rohingya camp
                           </h2>
                         </div>
@@ -1767,18 +1805,17 @@
                         <div class="imgresize">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid h-100" src="./media/imgAll/countrylist1.jpg"
+                              <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/countrylist1.jpg"
                                 alt="Paikari Bazar" title="Paikari Bazar">
                             </picture>
                           </figure>
 
                         </div>
                       </div>
-                      <div class="col-7 bazar-news ">
-                        <div class="desc">
-                          <h2 class="title">
-                            48 murders in six months at Rohingya Camp  
-                          </h2>
+                      <div class="col-7 bazar-desc">
+                        <div class="desc mt-2">
+                          <h2>
+                            No alternative to Awami League: Arafat </h2>
                         </div>
                       </div>
                     </div>
@@ -1792,17 +1829,17 @@
                         <div class="imgresize">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid" src="./media/imgAll/countrylist2.jpg" alt="Paikari Bazar"
-                                title="Paikari Bazar">
+                              <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/countrylist2.jpg"
+                                alt="Paikari Bazar" title="Paikari Bazar">
                             </picture>
                           </figure>
 
 
                         </div>
                       </div>
-                      <div class="col-7 bazar-news">
-                        <div class="desc">
-                          <h2 class="title">
+                      <div class="col-7 bazar-desc">
+                        <div class="desc mt-2">
+                          <h2>
                             ARSA commander killed in ‘gunfight’ at Rohingya camp
                           </h2>
                         </div>
@@ -1820,9 +1857,9 @@
               <div class="col-3 bazar-bottom-news BorderRight">
 
 
-                <a href="/">
+                <a href="/" class="sports-area-bottom">
                   <div class="desc">
-                    <h3 class="title">Bangladesh elected to bowl first</h3>
+                    <h3>Bangladesh elected to bowl first</h3>
                     <div class="brief-line mt-4">
                       <p>The internal conflict within the ruling party Awami League has intensified nationwide as the
                         country prepares for the upcoming general elections scheduled for later this year. The central
@@ -1834,9 +1871,9 @@
                 </a>
               </div>
               <div class="col-3 bazar-bottom-news BorderRight">
-                <a href="/">
+                <a href="/" class="sports-area-bottom">
                   <div class="desc  marginTop">
-                    <h3 class="title">Tamim changes retirement decision on PM’s intervention</h3>
+                    <h3>Tamim changes retirement decision on PM’s intervention</h3>
                     <div class="brief-line">
                       <p>The internal conflict within the ruling party Awami League has intensified nationwide as the
                         country prepares for the upcoming general elections scheduled for later this year. The central
@@ -1849,10 +1886,10 @@
               </div>
               <div class="col-3 bazar-bottom-news BorderRight">
 
-                <a href="/">
+                <a href="/" class="sports-area-bottom">
                   <div class="desc ">
-                    <h3 class="title">Tamim at Ganabhaban to meet PM</h3>
-                    <div class="brief-line  mt-4">
+                    <h3>Tamim at Ganabhaban to meet PM</h3>
+                    <div class="brief-line mt-4">
                       <p>The internal conflict within the ruling party Awami League has intensified nationwide as the
                         country prepares for the upcoming general elections scheduled for later this year. The central
                         leaders and activists from the top to the grassroots level have been found frequently embroiled
@@ -1865,10 +1902,10 @@
               </div>
               <div class="col-3 bazar-bottom-news">
 
-                <a href="/">
+                <a href="/" class="sports-area-bottom">
                   <div class="desc  marginTop">
-                    <h3 class="title">Tamim announces retirement from international cricket</h3>
-                    <div class="brief-line">
+                    <h3>Tamim announces retirement from international cricket</h3>
+                    <div class="brief-line ">
                       <p>The internal conflict within the ruling party Awami League has intensified nationwide as the
                         country prepares for the upcoming general elections scheduled for later this year. The central
                         leaders and activists from the top to the grassroots level have been found frequently embroiled
@@ -1952,7 +1989,7 @@
 
                           </div>
                           <div class="desc">
-                            <h5 class="title mt-2">Dhaka Regency Hotel & Resort Partners with UGC OFFICERS’ ASSOCIATION 
+                            <h5 class="title mt-2">US-Bangla Airlines celebrates 9th anniversary
                             </h5>
                           </div>
                         </div>
@@ -2039,15 +2076,15 @@
         <div class="entertainment-area">
           <div class="row ">
             <div class="col-4">
-              <div class="lead-news">
+              <div class="lead-news mt-3">
                 <div class="lead-newslist">
-                  <div class="row g-3">
+                  <div class="row g-4">
                     <div class="col-5">
                       <div class="imgSize">
-                        <div class="imgresize">
+                        <div class="imgresize mb-3">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid" src="./media/imgAll/enter-newslist-1.jpg"
+                              <img class="img100  Fixing-ratio" src="./media/imgAll/enter-newslist-1.jpg"
                                 alt="lead-news-image" title="Shanu is receiving positive response for ‘Joba’">
                             </picture>
                           </figure>
@@ -2065,15 +2102,15 @@
                   </div>
                 </div>
               </div>
-              <div class="lead-news">
+              <div class="lead-news mt-3">
                 <div class="lead-newslist">
-                  <div class="row g-3">
+                  <div class="row g-4">
                     <div class="col-5 ">
-                      <div class="imgresize">
+                      <div class="imgresize mb-3">
                         <figure class="imgviewer">
                           <picture class="Fixing-ratio">
-                            <img class="img100 img-fluid" src="./media/imgAll/enter-newslist2.jpg" alt="lead-news-image"
-                              title="Five Netflix English Originals releasing in August 2023">
+                            <img class="img100 Fixing-ratio" src="./media/imgAll/enter-newslist2.jpg"
+                              alt="lead-news-image" title="Five Netflix English Originals releasing in August 2023">
                           </picture>
                         </figure>
 
@@ -2089,14 +2126,14 @@
                   </div>
                 </div>
               </div>
-              <div class="lead-news">
+              <div class="lead-news mt-3">
                 <div class="lead-newslist">
-                  <div class="row g-3">
+                  <div class="row g-4">
                     <div class="col-5">
-                      <div class="imgresize">
+                      <div class="imgresize mb-3">
                         <figure class="imgviewer">
                           <picture class="Fixing-ratio">
-                            <img class="img100 img-fluid " src="./media/imgAll/enter-newslist-3.jpg"
+                            <img class="img100  Fixing-ratio " src="./media/imgAll/enter-newslist-3.jpg"
                               alt="lead-news-image" title="Khairul Basar and Sadia flooded with praise">
                           </picture>
                         </figure>
@@ -2114,14 +2151,14 @@
                   </div>
                 </div>
               </div>
-              <div class="lead-news">
+              <div class="lead-news mt-3">
                 <div class="lead-newslist">
-                  <div class="row g-3">
+                  <div class="row g-4">
                     <div class="col-5 ">
-                      <div class="imgresize">
+                      <div class="imgresize mb-3">
                         <figure class="imgviewer">
                           <picture class="Fixing-ratio">
-                            <img class="img100 img-fluid" src="./media/imgAll/enter-newslist-4.jpg"
+                            <img class="img100 Fixing-ratio" src="./media/imgAll/enter-newslist-4.jpg"
                               alt="lead-news-image" title="Mithun Chakraborty’s mother passes away">
                           </picture>
                         </figure>
@@ -2138,14 +2175,14 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-2">
+              <div class="mt-3">
                 <div class="lead-newslist">
-                  <div class="row g-3">
+                  <div class="row g-4">
                     <div class="col-5">
-                      <div class="imgresize">
+                      <div class="imgresize mb-3">
                         <figure class="imgviewer">
                           <picture class="Fixing-ratio">
-                            <img class="img100 img-fluid" src="./media/imgAll/enter-newslist-5.jpg"
+                            <img class="img100 Fixing-ratio" src="./media/imgAll/enter-newslist-5.jpg"
                               alt="lead-news-image" title="Singer Konal on cloud nine">
                           </picture>
                         </figure>
@@ -2211,9 +2248,9 @@
                         </figure>
                       </div>
 
-                      <a href="/">
+                      <a href="/" class="sports-area-bottom">
                         <div class="desc mt-2">
-                          <h2 class="title">Happy birthday, Purnima</h2>
+                          <h3>Happy birthday, Purnima</h3>
                         </div>
                       </a>
                     </div>
@@ -2234,9 +2271,9 @@
 
                       </div>
 
-                      <a href="/">
+                      <a href="/" class="sports-area-bottom">
                         <div class="desc mt-2">
-                          <h3 class="title">Coke Studio Bangla drops fresh track ‘Shondhatara’</h3>
+                          <h3>Coke Studio Bangla drops fresh track ‘Shondhatara’</h3>
                         </div>
                       </a>
                     </div>
@@ -2252,9 +2289,9 @@
                         </figure>
                       </div>
 
-                      <a href="/">
+                      <a href="/" class="sports-area-bottom">
                         <div class="desc mt-2">
-                          <h3 class="title">‘Priyotoma’ now an unforgettable debut for Idhika Paul</h3>
+                          <h3>‘Priyotoma’ now an unforgettable debut for Idhika Paul</h3>
                         </div>
                       </a>
                     </div>
@@ -2622,9 +2659,9 @@
                 </figure>
 
               </div>
-              <a href="/">
-                <div class="desc mt-2">
-                  <h3 class="title">320-year-old newspaper ’Wiener Zeitung’ ends daily print edition</h3>
+              <a href="/" class="sports-area-bottom">
+                <div class="desc">
+                  <h3>320-year-old newspaper ’Wiener Zeitung’ ends daily print edition</h3>
 
                 </div>
               </a>
@@ -2639,9 +2676,9 @@
                 </figure>
 
               </div>
-              <a href="/">
-                <div class="desc mt-2">
-                  <h3 class="title">JU’s Prajapati Hall: Nature and Architecture United</h3>
+              <a href="/" class="sports-area-bottom">
+                <div class="desc">
+                  <h3>JU’s Prajapati Hall: Nature and Architecture United</h3>
 
                 </div>
               </a>
@@ -2656,9 +2693,9 @@
                 </figure>
 
               </div>
-              <a href="/">
-                <div class="desc mt-2">
-                  <h3 class="title">Beef with Broccoli</h3>
+              <a href="/" class="sports-area-bottom">
+                <div class="desc">
+                  <h3>Beef with Broccoli</h3>
 
                 </div>
               </a>
@@ -2673,9 +2710,9 @@
                 </figure>
 
               </div>
-              <a href="/">
-                <div class="desc mt-2">
-                  <h3 class="title">Khashir (Mutton) Chaap Recipe</h3>
+              <a href="/" class="sports-area-bottom">
+                <div class="desc">
+                  <h3>Khashir (Mutton) Chaap Recipe</h3>
                 </div>
               </a>
             </div>
@@ -2831,7 +2868,7 @@
                 </h3>
               </div>
               <div class="video-area ">
-                <div class="paikariBazar mt-3 ">
+                <div class="paikariBazar mt-3 mb-2 ">
                   <div class="imgresize">
                     <figure class="imgviewer">
                       <picture class="Fixing-ratio">
@@ -2844,24 +2881,24 @@
                       <i class="fa-solid fa-play"></i>
                     </span>
                   </div>
-                  <a href="/">
-                    <div class="desc mt-3">
-                      <h3 class="title">পাইকারি বাজার মানেই শ্যামবাজার</h3>
+                  <a href="/" class="sports-area-bottom">
+                    <div class="desc mt-2">
+                      <h3>পাইকারি বাজার মানেই শ্যামবাজার</h3>
                     </div>
                   </a>
 
 
                 </div>
 
-                <div class="BazarList mb-3 ">
-                  <div class="bazar-list-area mt-3">
+                <div class="BazarList mb-2 ">
+                  <div class="bazar-list-area mt-2">
                     <div class="row">
                       <div class="col-5 iconresize">
                         <!-- photo1 -->
                         <div class="imgresize">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/paikariBazar.jpg"
+                              <img class="img100  Fixing-ratio" src="./media/imgAll/paikariBazar.jpg"
                                 alt="Paikari Bazar" title="Paikari Bazar">
                             </picture>
                           </figure>
@@ -2871,9 +2908,9 @@
                           </span>
                         </div>
                       </div>
-                      <div class="col-7 ">
+                      <div class="col-7  sports-area-bottom">
                         <div class="desc">
-                          <h3 class="title">
+                          <h3>
                             রাত হলেই জেগে ওঠে কারওয়ান বাজার
                           </h3>
                         </div>
@@ -2882,14 +2919,14 @@
                   </div>
                 </div>
                 <div class="BazarList">
-                  <div class="bazar-list-area mt-3">
+                  <div class="bazar-list-area mt-2">
                     <div class="row">
                       <div class="col-5 iconresize">
                         <!-- photo1 -->
                         <div class="imgresize">
                           <figure class="imgviewer">
                             <picture class="Fixing-ratio">
-                              <img class="img100 img-fluid Fixing-ratio" src="./media/imgAll/paikariBazar.jpg"
+                              <img class="img100  Fixing-ratio" src="./media/imgAll/paikariBazar.jpg"
                                 alt="Paikari Bazar" title="Paikari Bazar">
                             </picture>
                           </figure>
@@ -2899,9 +2936,9 @@
                           </span>
                         </div>
                       </div>
-                      <div class="col-7 ">
-                        <div class="desc">
-                          <h3 class="title">
+                      <div class="col-7  sports-area-bottom">
+                        <div class=" desc">
+                          <h3>
                             বৃষ্টির দিনে জেলেপাড়া
                           </h3>
                         </div>
